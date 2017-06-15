@@ -12,6 +12,7 @@ free: 1
 
 简单吧，让我们来动手实现：
 
+```ruby
     class Phrase
       attr_accessor :words
       def initialize(words)
@@ -34,6 +35,7 @@ free: 1
         word_list
       end
     end
+```
 最初的这一版实现很直接。创建一个hash，当单词出现时，对其相关hash键的值进行计数。够简单咯。
 但是这里有三个问题：
 - word_count方法不易读
@@ -42,6 +44,7 @@ free: 1
 （接下来这个版本看起来更丑，但这只是一切变好之前的过渡）
 
 
+```ruby
     class Phrase
       attr_accessor :words
       def initialize(words)
@@ -76,6 +79,7 @@ free: 1
        word
      end
     end
+```
 
 哦天，这个实现太恶心了。找大神帮我review之后作出了如下改进：
 1. 创建有默认值的hash。` Hash.new(0)`创建了一个hash并且将0作为各个键的默认值。
