@@ -1,6 +1,7 @@
 # Ruby中的nil?，empty?与Rails中的blank?，present?
 
 [A concise explanation of nil v. empty v. blank in Ruby on Rails](https://stackoverflow.com/questions/885414/a-concise-explanation-of-nil-v-empty-v-blank-in-ruby-on-rails)
+
 `.nil?`可以用在一切对象上，当对象为nil时，返回true
 `.empty?`可以用于字符串，数组或者哈希，当满足下列条件时，返回true
 
