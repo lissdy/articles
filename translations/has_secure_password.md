@@ -82,7 +82,7 @@ end
 Rails不强制使用`password_confirmation `，但是你需要的话可以像这么来用。
 我确实很喜欢这个功能，因为它节省了很多代码和开发时间。而且对大部分应用来说够用了。
 
-##译注
+## 译注
 `has_secure_password `会自动加入以下验证规则：
 - 在创建时密码必须存在
 - 密码长度小于等于72字符
@@ -92,7 +92,7 @@ Rails不强制使用`password_confirmation `，但是你需要的话可以像这
 has_secure_password :validations => false
 ```
 
-##另
+## 另
 - 模块验证规则查看
 ```ruby
 User.validators
